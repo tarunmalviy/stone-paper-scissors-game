@@ -1,0 +1,204 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+
+.nav{
+    background-color: #0f1111;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: wheat;
+    font-size: 40px;
+    font-weight: 600;
+}
+#chance{
+    color: rgb(168, 87, 87);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+body{
+    background-color: rgb(82, 226, 197);
+}
+.box{
+    background-color: pink;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin: 30px;
+    border: 4px solid rgb(82, 226, 197);
+}
+.content-box{
+    display: flex;
+    justify-content: center;
+    height: 250px;
+}
+.box:hover{
+    border: 4px solid white;
+}
+.rock{
+    background-image: url("./assests/rock.jpeg");
+    background-size: cover;
+}
+.paper{
+    background-image: url("./assests/paper.jpeg");
+      background-size: cover;
+}
+.scissor{
+    background-image: url("./assests/scissor.jpeg");
+      background-size: cover;
+}
+.result{
+    background-color: rgb(82, 226, 197);
+    color: black;
+}
+.score{
+    margin: 20px;
+    text-align: center;
+}
+.status{
+    margin:30px;
+    
+}
+.line{
+    background-color: #0f1111;
+    border:2px solid black;
+    border-radius: 20px;
+    padding:4px;
+    color:wheat;
+}
+
+#newGameDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#newGameButton{
+    background-color: darkgreen;
+    color: white;
+    height: 50px;
+    width: 260px;
+    border-radius: 20px;
+}
+#newGameButton:hover{
+    border: 4px solid  white;
+}
+
+/* Mobile-first styles */
+/* Make the initial design responsive */
+body {
+    font-size: 16px;
+}
+
+/* Mobile Styles */
+@media (max-width: 600px) {
+    .nav {
+        height: 50px;
+        font-size: 24px;
+    }
+
+    .box {
+        height: 100px;
+        width: 100px;
+        margin: 10px;
+        border: 3px solid rgb(82, 226, 197);
+    }
+
+    .content-box {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+
+    #chance h1 {
+        font-size: 16px;
+    }
+
+    .status p {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .score p {
+        font-size: 18px;
+    }
+
+    #newGameButton {
+        height: 40px;
+        width: 220px;
+    }
+}
+
+/* Tablet Styles */
+@media (min-width: 601px) and (max-width: 900px) {
+    .nav {
+        height: 55px;
+        font-size: 32px;
+    }
+
+    .box {
+        height: 120px;
+        width: 120px;
+        margin: 20px;
+    }
+
+    .content-box {
+        flex-direction: row;
+        height: auto;
+    }
+
+    #chance h1 {
+        font-size: 20px;
+    }
+
+    .score p {
+        font-size: 20px;
+    }
+
+    #newGameButton {
+        height: 45px;
+        width: 240px;
+    }
+}
+
+/* Larger Screens */
+@media (min-width: 901px) {
+    .nav {
+        font-size: 36px;
+    }
+
+    .box {
+        height: 150px;
+        width: 150px;
+    }
+
+    .content-box {
+        flex-direction: row;
+    }
+
+    #chance h1 {
+        font-size: 24px;
+    }
+
+    .score p {
+        font-size: 24px;
+    }
+
+    #newGameButton {
+        height: 50px;
+        width: 260px;
+    }
+}
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
