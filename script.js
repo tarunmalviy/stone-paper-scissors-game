@@ -60,18 +60,18 @@ function decisionWinner(user,comp){
     
     result = comp - user;
     if(result === -2 || result === 1 ) {
-        feedback.innerHTML =`user win | You: ${decode[user]} Comp: ${decode[comp]}`
+        feedback.innerHTML =`Yon Won | You: ${decode[user]} | Comp: ${decode[comp]}`
         userScoreVal = userScoreVal + 1;
         userScore.innerHTML = `${userScoreVal}`
         
     }
     else if(result === 2 || result === -1 ) {
-        feedback.innerHTML =`comp win | You: ${decode[user]} Comp: ${decode[comp]}`;
+        feedback.innerHTML =`Comp Won | You: ${decode[user]} | Comp: ${decode[comp]}`;
         compScoreVal = compScoreVal + 1;
         compScore.innerHTML = `${compScoreVal}`
         
     }else{
-        feedback.innerHTML =`Draw | You: ${decode[user]} Comp: ${decode[comp]}`;
+        feedback.innerHTML =`Drawn | You: ${decode[user]} | Comp: ${decode[comp]}`;
     }
 }
 
@@ -84,7 +84,7 @@ function gameEnd() {
 
     if(userScoreVal > compScoreVal) winner = `Congratulations! You Won`
     else if(userScoreVal < compScoreVal) winner = `Oops! You Lose`
-    else if(userScoreVal === compScoreVal) winner = `No winner ! match tie`
+    else if(userScoreVal === compScoreVal) winner = `No Winner ! Match Tie`
     feedback.innerHTML = `Final Result : ${winner}`
 
     newgame()
