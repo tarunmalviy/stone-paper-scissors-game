@@ -60,18 +60,18 @@ function decisionWinner(user,comp){
     
     result = comp - user;
     if(result === -2 || result === 1 ) {
-        feedback.innerHTML =`user win | user: ${decode[user]} comp: ${decode[comp]}`
+        feedback.innerHTML =`user win | You: ${decode[user]} Comp: ${decode[comp]}`
         userScoreVal = userScoreVal + 1;
         userScore.innerHTML = `${userScoreVal}`
         
     }
     else if(result === 2 || result === -1 ) {
-        feedback.innerHTML =`comp win | user: ${decode[user]} comp: ${decode[comp]}`;
+        feedback.innerHTML =`comp win | You: ${decode[user]} Comp: ${decode[comp]}`;
         compScoreVal = compScoreVal + 1;
         compScore.innerHTML = `${compScoreVal}`
         
     }else{
-        feedback.innerHTML =`Draw | user: ${decode[user]} comp: ${decode[comp]}`;
+        feedback.innerHTML =`Draw | You: ${decode[user]} Comp: ${decode[comp]}`;
     }
 }
 
