@@ -1,7 +1,7 @@
 # Rock Paper Scissors Game
 
 ## Description
-This is a simple Rock Paper Scissors game built using HTML, CSS, and JavaScript. Players can choose between Rock, Paper, and Scissors, and the game keeps track of the scores and the number of chances left.
+This is a Rock Paper Scissors game built using HTML, CSS, JavaScript and unique algorithm. Players can choose between Rock, Paper, and Scissors, and the game keeps track of the scores and the number of chances left.
 
 ## Mobile View
 <img src="screenshots/screenshot_mobile.jpg" alt="Gameplay Screenshot" width="250" height="500">
